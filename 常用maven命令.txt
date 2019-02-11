@@ -1,0 +1,13 @@
+#打包命令
+mvn clean package -Dmaven.test.skip=true  
+
+#指定接口启动jar包
+java -jar -Dserver.port=9999 xxx.jar
+java -jar xxx.jar --server.port=8080
+
+#指定配置文件启动jar包
+java -jar demo-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
+
+#指定配置文件和接口启动jar包
+java -jar demo-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod --server.port=8090
+java -jar -Dserver.port=9999 demo-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod

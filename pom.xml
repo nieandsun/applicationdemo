@@ -18,7 +18,8 @@
         <java.version>1.8</java.version>
     </properties>
 
-<!--    <profiles>
+    <profiles>
+        <!-- ++++++++++++++++++++++++++++++多环境配置++++++++++++++++++++++++++++++++++++++ -->
         <profile>
             <id>dev</id>
             <properties>
@@ -27,6 +28,7 @@
                 <main-class>com.nrsc.application.demo.DemoApplication</main-class>
             </properties>
             <activation>
+                <!--默认使用的环境-->
                 <activeByDefault>true</activeByDefault>
             </activation>
         </profile>
@@ -54,7 +56,8 @@
                 <main-class>com.nrsc.application.demo.DemoApplication</main-class>
             </properties>
         </profile>
-    </profiles>-->
+        <!-- ++++++++++++++++++++++++++++++多环境配置++++++++++++++++++++++++++++++++++++++ -->
+    </profiles>
 
     <dependencies>
         <dependency>
@@ -70,7 +73,8 @@
     </dependencies>
 
     <build>
-        <finalName>nrsc</finalName>
+        <!--指定打包的名称-->
+        <!--<finalName>application-demo</finalName> -->
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

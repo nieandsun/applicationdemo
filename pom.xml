@@ -18,7 +18,7 @@
         <java.version>1.8</java.version>
     </properties>
 
-    <profiles>
+<!--    <profiles>
         <profile>
             <id>dev</id>
             <properties>
@@ -54,7 +54,7 @@
                 <main-class>com.nrsc.application.demo.DemoApplication</main-class>
             </properties>
         </profile>
-    </profiles>
+    </profiles>-->
 
     <dependencies>
         <dependency>
@@ -70,6 +70,7 @@
     </dependencies>
 
     <build>
+        <finalName>nrsc</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
